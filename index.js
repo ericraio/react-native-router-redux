@@ -169,7 +169,7 @@ class Router extends React.Component {
 
     let footer = currentRoute.footer;
     if (footer) {
-      footer = React.addons.cloneWithProps(footer, {
+      footer = React.cloneElement(footer, {
         navigator: this.refs.nav,
       });
     }
@@ -192,7 +192,7 @@ class Router extends React.Component {
     var navBar = route.navigationBar;
 
     if (navBar) {
-      navBar = React.addons.cloneWithProps(navBar, {
+      navBar = React.cloneElement(navBar, {
         navigator: navigator,
         route: route,
         router: this.props.router,
