@@ -28,7 +28,7 @@ const rightButton = (props = {}) => {
   }
 
   return {
-    handler: props.navRightHandler || () => {},
+    handler: props.navRightHandler || function(){},
     style: props.navRightStyle || {},
     tintColor: props.navRightColor || '#037AFF',
     title: props.navRightTitle || '',
